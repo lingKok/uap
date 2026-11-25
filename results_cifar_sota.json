@@ -1,0 +1,168 @@
+{
+  "results": {
+    "UAP-SGD": {
+      "resnet50": 0.5925,
+      "vgg16_bn": 0.8165,
+      "resnet101": 0.5805,
+      "mobilenet_v2": 0.8775,
+      "shufflenet_v2_x1_0": 0.8025
+    },
+    "PD-UA": {
+      "resnet50": 0.172,
+      "vgg16_bn": 0.8115,
+      "resnet101": 0.1685,
+      "mobilenet_v2": 0.8615,
+      "shufflenet_v2_x1_0": 0.613
+    },
+    "SSA": {
+      "resnet50": 0.075,
+      "vgg16_bn": 0.0745,
+      "resnet101": 0.063,
+      "mobilenet_v2": 0.172,
+      "shufflenet_v2_x1_0": 0.1975
+    },
+    "Gen-UAP": {
+      "resnet50": 0.076,
+      "vgg16_bn": 0.104,
+      "resnet101": 0.064,
+      "mobilenet_v2": 0.182,
+      "shufflenet_v2_x1_0": 0.199
+    },
+    "Meta-0": {
+      "resnet50": 0.6405,
+      "vgg16_bn": 0.7965,
+      "resnet101": 0.572,
+      "mobilenet_v2": 0.6325,
+      "shufflenet_v2_x1_0": 0.614
+    },
+    "Meta-5": {
+      "resnet50": 0.677,
+      "vgg16_bn": 0.823,
+      "resnet101": 0.605,
+      "mobilenet_v2": 0.806,
+      "shufflenet_v2_x1_0": 0.7035
+    },
+    "Meta-10": {
+      "resnet50": 0.695,
+      "vgg16_bn": 0.831,
+      "resnet101": 0.6285,
+      "mobilenet_v2": 0.8485,
+      "shufflenet_v2_x1_0": 0.751
+    }
+  },
+  "timing": {
+    "UAP-SGD": {
+      "resnet50": 8.14671015739441,
+      "vgg16_bn": 0.7898514270782471,
+      "resnet101": 2.6651611328125,
+      "mobilenet_v2": 0.8708767890930176,
+      "shufflenet_v2_x1_0": 0.917302131652832
+    },
+    "PD-UA": {
+      "resnet50": 1.5654585361480713,
+      "vgg16_bn": 0.7803621292114258,
+      "resnet101": 2.676764488220215,
+      "mobilenet_v2": 0.6863150596618652,
+      "shufflenet_v2_x1_0": 0.8022851943969727
+    },
+    "SSA": {
+      "resnet50": 0.028899192810058594,
+      "vgg16_bn": 0.012160301208496094,
+      "resnet101": 0.044455528259277344,
+      "mobilenet_v2": 0.016150474548339844,
+      "shufflenet_v2_x1_0": 0.01714801788330078
+    },
+    "Gen-UAP": {
+      "resnet50": 0.2862730026245117,
+      "vgg16_bn": 0.10917806625366211,
+      "resnet101": 0.3762853145599365,
+      "mobilenet_v2": 0.18782782554626465,
+      "shufflenet_v2_x1_0": 0.18103885650634766
+    },
+    "Meta-0": {},
+    "Meta-5": {
+      "resnet50": 0.1179509162902832,
+      "vgg16_bn": 0.05330204963684082,
+      "resnet101": 0.19946646690368652,
+      "mobilenet_v2": 0.05604147911071777,
+      "shufflenet_v2_x1_0": 0.06632447242736816
+    },
+    "Meta-10": {
+      "resnet50": 0.23144149780273438,
+      "vgg16_bn": 0.10650110244750977,
+      "resnet101": 0.3927187919616699,
+      "mobilenet_v2": 0.10212326049804688,
+      "shufflenet_v2_x1_0": 0.1274104118347168
+    }
+  },
+  "epsilon": {
+    "0.03": {
+      "resnet50": {
+        "UAP-SGD": 0.138,
+        "Meta-0": 0.234,
+        "Meta-0-scaled": 0.23
+      },
+      "vgg16_bn": {
+        "UAP-SGD": 0.3365,
+        "Meta-0": 0.433,
+        "Meta-0-scaled": 0.428
+      },
+      "resnet101": {
+        "UAP-SGD": 0.1435,
+        "Meta-0": 0.211,
+        "Meta-0-scaled": 0.208
+      }
+    },
+    "0.05": {
+      "resnet50": {
+        "UAP-SGD": 0.657,
+        "Meta-0": 0.6405,
+        "Meta-0-scaled": 0.6405
+      },
+      "vgg16_bn": {
+        "UAP-SGD": 0.8265,
+        "Meta-0": 0.7965,
+        "Meta-0-scaled": 0.7965
+      },
+      "resnet101": {
+        "UAP-SGD": 0.548,
+        "Meta-0": 0.572,
+        "Meta-0-scaled": 0.572
+      }
+    },
+    "0.1": {
+      "resnet50": {
+        "UAP-SGD": 0.8895,
+        "Meta-0": 0.8865,
+        "Meta-0-scaled": 0.8865
+      },
+      "vgg16_bn": {
+        "UAP-SGD": 0.8935,
+        "Meta-0": 0.893,
+        "Meta-0-scaled": 0.8925
+      },
+      "resnet101": {
+        "UAP-SGD": 0.8885,
+        "Meta-0": 0.884,
+        "Meta-0-scaled": 0.885
+      }
+    },
+    "0.2": {
+      "resnet50": {
+        "UAP-SGD": 0.8935,
+        "Meta-0": 0.8915,
+        "Meta-0-scaled": 0.891
+      },
+      "vgg16_bn": {
+        "UAP-SGD": 0.8935,
+        "Meta-0": 0.893,
+        "Meta-0-scaled": 0.8935
+      },
+      "resnet101": {
+        "UAP-SGD": 0.8935,
+        "Meta-0": 0.892,
+        "Meta-0-scaled": 0.8935
+      }
+    }
+  }
+}

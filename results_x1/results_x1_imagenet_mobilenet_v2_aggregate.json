@@ -1,0 +1,58 @@
+{
+  "mobilenet_v2": {
+    "0.1": {
+      "scaled_from_train_few": {
+        "mean": 0.9946666666666667,
+        "std": 0.0006236095644623438
+      },
+      "scaled_from_train_many": {
+        "mean": 0.9979999999999999,
+        "std": 1.1102230246251565e-16
+      },
+      "sgd_target_few": {
+        "mean": 0.9963333333333333,
+        "std": 0.00023570226039554222
+      },
+      "sgd_target_many": {
+        "mean": 0.9974999999999999,
+        "std": 0.0004082482904638634
+      }
+    },
+    "0.2": {
+      "scaled_from_train_few": {
+        "mean": 0.999,
+        "std": 0.0
+      },
+      "scaled_from_train_many": {
+        "mean": 0.999,
+        "std": 0.0
+      },
+      "sgd_target_few": {
+        "mean": 0.999,
+        "std": 0.0
+      },
+      "sgd_target_many": {
+        "mean": 0.999,
+        "std": 0.0
+      }
+    },
+    "0.3": {
+      "scaled_from_train_few": {
+        "mean": 0.9993333333333334,
+        "std": 0.00023570226039554222
+      },
+      "scaled_from_train_many": {
+        "mean": 0.999,
+        "std": 0.0
+      },
+      "sgd_target_few": {
+        "mean": 0.999,
+        "std": 0.0
+      },
+      "sgd_target_many": {
+        "mean": 0.999,
+        "std": 0.0
+      }
+    }
+  }
+}

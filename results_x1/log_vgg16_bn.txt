@@ -1,0 +1,41 @@
+使用设备: cuda
+
+========================================================================
+SEED 42  dataset=imagenet  ε_train=0.05  few=200 many=2000  steps_train=200 steps_few=200 steps_many=500
+========================================================================
+  [vgg16_bn] ε=0.10  scaled_few=0.997  scaled_many=0.998  tgt_few=0.999  tgt_many=0.998  | sat%=94
+  [vgg16_bn] ε=0.20  scaled_few=1.000  scaled_many=0.999  tgt_few=0.999  tgt_many=0.999  | sat%=94
+  [vgg16_bn] ε=0.30  scaled_few=1.000  scaled_many=0.999  tgt_few=0.999  tgt_many=0.999  | sat%=94
+  -> vgg16_bn 完成 (1010.8s)
+[保存] results_x1/results_x1_imagenet_vgg16_bn_seed42.json
+
+========================================================================
+SEED 1342  dataset=imagenet  ε_train=0.05  few=200 many=2000  steps_train=200 steps_few=200 steps_many=500
+========================================================================
+  [vgg16_bn] ε=0.10  scaled_few=0.998  scaled_many=0.998  tgt_few=0.999  tgt_many=0.998  | sat%=94
+  [vgg16_bn] ε=0.20  scaled_few=1.000  scaled_many=0.999  tgt_few=0.999  tgt_many=0.999  | sat%=94
+  [vgg16_bn] ε=0.30  scaled_few=1.000  scaled_many=0.999  tgt_few=0.999  tgt_many=0.999  | sat%=94
+  -> vgg16_bn 完成 (1009.2s)
+[保存] results_x1/results_x1_imagenet_vgg16_bn_seed1342.json
+
+========================================================================
+SEED 2342  dataset=imagenet  ε_train=0.05  few=200 many=2000  steps_train=200 steps_few=200 steps_many=500
+========================================================================
+  [vgg16_bn] ε=0.10  scaled_few=0.998  scaled_many=0.998  tgt_few=0.999  tgt_many=0.997  | sat%=93
+  [vgg16_bn] ε=0.20  scaled_few=1.000  scaled_many=0.999  tgt_few=0.999  tgt_many=0.999  | sat%=93
+  [vgg16_bn] ε=0.30  scaled_few=1.000  scaled_many=0.999  tgt_few=0.999  tgt_many=0.999  | sat%=93
+  -> vgg16_bn 完成 (1009.1s)
+[保存] results_x1/results_x1_imagenet_vgg16_bn_seed2342.json
+
+========================================================================
+聚合判读（FR 均值；越高=攻击越强）：反转 vs 基线 / 抗 artifact / 机制分离
+========================================================================
+  vgg16_bn       ε=0.10  scaled_few=0.997 scaled_many=0.998 tgt_few=0.999 tgt_many=0.998  | vs_base=-0.001 vs_artifact=-0.000 mech=+0.000
+  vgg16_bn       ε=0.20  scaled_few=1.000 scaled_many=0.999 tgt_few=0.999 tgt_many=0.999  | vs_base=+0.001 vs_artifact=+0.001 mech=+0.000
+  vgg16_bn       ε=0.30  scaled_few=1.000 scaled_many=0.999 tgt_few=0.999 tgt_many=0.999  | vs_base=+0.001 vs_artifact=+0.001 mech=+0.000
+------------------------------------------------------------------------
+  平均 反转vs基线(>0=成立):     +0.000  (67% 单元为正)
+  平均 抗artifact(>=0=稳健):    +0.000  (67% 单元>=0)
+  平均 机制(低ε超数据,>0):      +0.000  (67% 单元为正)
+
+[保存] results_x1/results_x1_imagenet_vgg16_bn_aggregate.json

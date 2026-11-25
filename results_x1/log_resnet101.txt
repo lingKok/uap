@@ -1,0 +1,41 @@
+使用设备: cuda
+
+========================================================================
+SEED 42  dataset=imagenet  ε_train=0.05  few=200 many=2000  steps_train=200 steps_few=200 steps_many=500
+========================================================================
+  [resnet101] ε=0.10  scaled_few=0.673  scaled_many=0.997  tgt_few=0.499  tgt_many=0.994  | sat%=88
+  [resnet101] ε=0.20  scaled_few=0.968  scaled_many=0.999  tgt_few=0.608  tgt_many=0.999  | sat%=88
+  [resnet101] ε=0.30  scaled_few=0.996  scaled_many=0.999  tgt_few=0.636  tgt_many=0.999  | sat%=88
+  -> resnet101 完成 (759.9s)
+[保存] results_x1/results_x1_imagenet_resnet101_seed42.json
+
+========================================================================
+SEED 1342  dataset=imagenet  ε_train=0.05  few=200 many=2000  steps_train=200 steps_few=200 steps_many=500
+========================================================================
+  [resnet101] ε=0.10  scaled_few=0.635  scaled_many=0.996  tgt_few=0.534  tgt_many=0.996  | sat%=88
+  [resnet101] ε=0.20  scaled_few=0.937  scaled_many=0.999  tgt_few=0.594  tgt_many=0.999  | sat%=88
+  [resnet101] ε=0.30  scaled_few=0.992  scaled_many=0.999  tgt_few=0.629  tgt_many=0.999  | sat%=88
+  -> resnet101 完成 (758.9s)
+[保存] results_x1/results_x1_imagenet_resnet101_seed1342.json
+
+========================================================================
+SEED 2342  dataset=imagenet  ε_train=0.05  few=200 many=2000  steps_train=200 steps_few=200 steps_many=500
+========================================================================
+  [resnet101] ε=0.10  scaled_few=0.643  scaled_many=0.995  tgt_few=0.521  tgt_many=0.996  | sat%=88
+  [resnet101] ε=0.20  scaled_few=0.944  scaled_many=0.999  tgt_few=0.588  tgt_many=0.999  | sat%=88
+  [resnet101] ε=0.30  scaled_few=0.994  scaled_many=0.999  tgt_few=0.624  tgt_many=0.999  | sat%=88
+  -> resnet101 完成 (758.2s)
+[保存] results_x1/results_x1_imagenet_resnet101_seed2342.json
+
+========================================================================
+聚合判读（FR 均值；越高=攻击越强）：反转 vs 基线 / 抗 artifact / 机制分离
+========================================================================
+  resnet101      ε=0.10  scaled_few=0.651 scaled_many=0.996 tgt_few=0.518 tgt_many=0.995  | vs_base=+0.133 vs_artifact=-0.345 mech=+0.001
+  resnet101      ε=0.20  scaled_few=0.949 scaled_many=0.999 tgt_few=0.596 tgt_many=0.999  | vs_base=+0.353 vs_artifact=-0.050 mech=+0.000
+  resnet101      ε=0.30  scaled_few=0.994 scaled_many=0.999 tgt_few=0.630 tgt_many=0.999  | vs_base=+0.364 vs_artifact=-0.005 mech=+0.000
+------------------------------------------------------------------------
+  平均 反转vs基线(>0=成立):     +0.283  (100% 单元为正)
+  平均 抗artifact(>=0=稳健):    -0.133  (0% 单元>=0)
+  平均 机制(低ε超数据,>0):      +0.000  (33% 单元为正)
+
+[保存] results_x1/results_x1_imagenet_resnet101_aggregate.json

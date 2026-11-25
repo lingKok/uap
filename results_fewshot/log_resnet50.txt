@@ -1,0 +1,66 @@
+  [resnet50] seed42 direct ε=0.10 白盒FR=0.556 (52.7s)
+  [resnet50] seed42 direct ε=0.20 白盒FR=0.680 (49.2s)
+  [resnet50] seed42 direct ε=0.30 白盒FR=0.667 (49.5s)
+  [resnet50] seed42 direct_lr0.002 ε=0.10 白盒FR=0.334 (49.6s)
+  [resnet50] seed42 direct_lr0.002 ε=0.20 白盒FR=0.320 (49.6s)
+  [resnet50] seed42 direct_lr0.002 ε=0.30 白盒FR=0.332 (49.7s)
+  [resnet50] seed42 direct_lr0.05 ε=0.10 白盒FR=0.940 (49.7s)
+  [resnet50] seed42 direct_lr0.05 ε=0.20 白盒FR=0.999 (49.6s)
+  [resnet50] seed42 direct_lr0.05 ε=0.30 白盒FR=0.999 (49.6s)
+  [resnet50] seed42 pdua ε=0.10 白盒FR=0.277 (49.6s)
+  [resnet50] seed42 pdua ε=0.20 白盒FR=0.273 (49.7s)
+  [resnet50] seed42 pdua ε=0.30 白盒FR=0.272 (49.7s)
+  [resnet50] seed42 lws ε=0.10 白盒FR=0.722 (49.7s)
+  [resnet50] seed42 lws ε=0.20 白盒FR=0.938 (49.7s)
+  [resnet50] seed42 lws ε=0.30 白盒FR=0.994 (49.7s)
+  [resnet50] seed42 lws_r ε=0.10 白盒FR=0.688 (59.7s)
+  [resnet50] seed42 lws_r ε=0.20 白盒FR=0.999 (58.7s)
+  [resnet50] seed42 lws_r ε=0.30 白盒FR=1.000 (58.5s)
+  [resnet50] seed42 ceiling ε=0.10 白盒FR=0.997
+  [resnet50] seed42 ceiling ε=0.20 白盒FR=0.999
+  [resnet50] seed42 ceiling ε=0.30 白盒FR=0.999
+[保存] results_fewshot/results_fewshot_imagenet_resnet50_seed42.json
+  [resnet50] seed1342 direct ε=0.10 白盒FR=0.547 (48.7s)
+  [resnet50] seed1342 direct ε=0.20 白盒FR=0.638 (49.2s)
+  [resnet50] seed1342 direct ε=0.30 白盒FR=0.654 (49.4s)
+  [resnet50] seed1342 direct_lr0.002 ε=0.10 白盒FR=0.336 (49.5s)
+  [resnet50] seed1342 direct_lr0.002 ε=0.20 白盒FR=0.338 (49.6s)
+  [resnet50] seed1342 direct_lr0.002 ε=0.30 白盒FR=0.337 (50.0s)
+  [resnet50] seed1342 direct_lr0.05 ε=0.10 白盒FR=0.978 (49.7s)
+  [resnet50] seed1342 direct_lr0.05 ε=0.20 白盒FR=0.999 (49.6s)
+  [resnet50] seed1342 direct_lr0.05 ε=0.30 白盒FR=0.999 (50.3s)
+  [resnet50] seed1342 pdua ε=0.10 白盒FR=0.275 (51.0s)
+  [resnet50] seed1342 pdua ε=0.20 白盒FR=0.276 (50.0s)
+  [resnet50] seed1342 pdua ε=0.30 白盒FR=0.274 (49.7s)
+  [resnet50] seed1342 lws ε=0.10 白盒FR=0.713 (49.7s)
+  [resnet50] seed1342 lws ε=0.20 白盒FR=0.947 (49.9s)
+  [resnet50] seed1342 lws ε=0.30 白盒FR=0.995 (50.0s)
+  [resnet50] seed1342 lws_r ε=0.10 白盒FR=0.708 (58.3s)
+  [resnet50] seed1342 lws_r ε=0.20 白盒FR=0.998 (58.6s)
+  [resnet50] seed1342 lws_r ε=0.30 白盒FR=1.000 (58.9s)
+  [resnet50] seed1342 ceiling ε=0.10 白盒FR=0.997
+  [resnet50] seed1342 ceiling ε=0.20 白盒FR=0.999
+  [resnet50] seed1342 ceiling ε=0.30 白盒FR=0.999
+[保存] results_fewshot/results_fewshot_imagenet_resnet50_seed1342.json
+  [resnet50] seed2342 direct ε=0.10 白盒FR=0.529 (48.8s)
+  [resnet50] seed2342 direct ε=0.20 白盒FR=0.610 (49.3s)
+  [resnet50] seed2342 direct ε=0.30 白盒FR=0.633 (49.5s)
+  [resnet50] seed2342 direct_lr0.002 ε=0.10 白盒FR=0.328 (49.6s)
+  [resnet50] seed2342 direct_lr0.002 ε=0.20 白盒FR=0.335 (50.7s)
+  [resnet50] seed2342 direct_lr0.002 ε=0.30 白盒FR=0.330 (49.8s)
+  [resnet50] seed2342 direct_lr0.05 ε=0.10 白盒FR=0.958 (49.5s)
+  [resnet50] seed2342 direct_lr0.05 ε=0.20 白盒FR=1.000 (49.6s)
+  [resnet50] seed2342 direct_lr0.05 ε=0.30 白盒FR=0.999 (49.5s)
+  [resnet50] seed2342 pdua ε=0.10 白盒FR=0.273 (49.5s)
+  [resnet50] seed2342 pdua ε=0.20 白盒FR=0.273 (49.6s)
+  [resnet50] seed2342 pdua ε=0.30 白盒FR=0.271 (49.6s)
+  [resnet50] seed2342 lws ε=0.10 白盒FR=0.691 (49.5s)
+  [resnet50] seed2342 lws ε=0.20 白盒FR=0.949 (49.5s)
+  [resnet50] seed2342 lws ε=0.30 白盒FR=0.990 (49.6s)
+  [resnet50] seed2342 lws_r ε=0.10 白盒FR=0.972 (58.3s)
+  [resnet50] seed2342 lws_r ε=0.20 白盒FR=0.998 (58.2s)
+  [resnet50] seed2342 lws_r ε=0.30 白盒FR=1.000 (58.3s)
+  [resnet50] seed2342 ceiling ε=0.10 白盒FR=0.997
+  [resnet50] seed2342 ceiling ε=0.20 白盒FR=0.999
+  [resnet50] seed2342 ceiling ε=0.30 白盒FR=0.999
+[保存] results_fewshot/results_fewshot_imagenet_resnet50_seed2342.json

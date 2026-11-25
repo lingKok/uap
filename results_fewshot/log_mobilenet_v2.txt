@@ -1,0 +1,66 @@
+  [mobilenet_v2] seed42 direct ε=0.10 白盒FR=0.997 (36.0s)
+  [mobilenet_v2] seed42 direct ε=0.20 白盒FR=0.999 (30.4s)
+  [mobilenet_v2] seed42 direct ε=0.30 白盒FR=0.999 (30.5s)
+  [mobilenet_v2] seed42 direct_lr0.002 ε=0.10 白盒FR=0.431 (30.7s)
+  [mobilenet_v2] seed42 direct_lr0.002 ε=0.20 白盒FR=0.430 (30.7s)
+  [mobilenet_v2] seed42 direct_lr0.002 ε=0.30 白盒FR=0.433 (30.8s)
+  [mobilenet_v2] seed42 direct_lr0.05 ε=0.10 白盒FR=0.997 (30.7s)
+  [mobilenet_v2] seed42 direct_lr0.05 ε=0.20 白盒FR=0.999 (30.6s)
+  [mobilenet_v2] seed42 direct_lr0.05 ε=0.30 白盒FR=0.999 (30.6s)
+  [mobilenet_v2] seed42 pdua ε=0.10 白盒FR=0.352 (30.6s)
+  [mobilenet_v2] seed42 pdua ε=0.20 白盒FR=0.348 (30.9s)
+  [mobilenet_v2] seed42 pdua ε=0.30 白盒FR=0.351 (30.9s)
+  [mobilenet_v2] seed42 lws ε=0.10 白盒FR=0.994 (30.6s)
+  [mobilenet_v2] seed42 lws ε=0.20 白盒FR=0.999 (30.6s)
+  [mobilenet_v2] seed42 lws ε=0.30 白盒FR=1.000 (30.6s)
+  [mobilenet_v2] seed42 lws_r ε=0.10 白盒FR=0.996 (34.5s)
+  [mobilenet_v2] seed42 lws_r ε=0.20 白盒FR=0.999 (34.7s)
+  [mobilenet_v2] seed42 lws_r ε=0.30 白盒FR=0.999 (34.7s)
+  [mobilenet_v2] seed42 ceiling ε=0.10 白盒FR=0.999
+  [mobilenet_v2] seed42 ceiling ε=0.20 白盒FR=0.999
+  [mobilenet_v2] seed42 ceiling ε=0.30 白盒FR=0.999
+[保存] results_fewshot/results_fewshot_imagenet_mobilenet_v2_seed42.json
+  [mobilenet_v2] seed1342 direct ε=0.10 白盒FR=0.997 (30.2s)
+  [mobilenet_v2] seed1342 direct ε=0.20 白盒FR=0.999 (30.3s)
+  [mobilenet_v2] seed1342 direct ε=0.30 白盒FR=0.999 (30.4s)
+  [mobilenet_v2] seed1342 direct_lr0.002 ε=0.10 白盒FR=0.414 (30.5s)
+  [mobilenet_v2] seed1342 direct_lr0.002 ε=0.20 白盒FR=0.426 (30.6s)
+  [mobilenet_v2] seed1342 direct_lr0.002 ε=0.30 白盒FR=0.428 (30.6s)
+  [mobilenet_v2] seed1342 direct_lr0.05 ε=0.10 白盒FR=0.997 (30.6s)
+  [mobilenet_v2] seed1342 direct_lr0.05 ε=0.20 白盒FR=0.999 (30.8s)
+  [mobilenet_v2] seed1342 direct_lr0.05 ε=0.30 白盒FR=0.999 (30.7s)
+  [mobilenet_v2] seed1342 pdua ε=0.10 白盒FR=0.351 (30.7s)
+  [mobilenet_v2] seed1342 pdua ε=0.20 白盒FR=0.350 (30.8s)
+  [mobilenet_v2] seed1342 pdua ε=0.30 白盒FR=0.346 (30.8s)
+  [mobilenet_v2] seed1342 lws ε=0.10 白盒FR=0.996 (30.7s)
+  [mobilenet_v2] seed1342 lws ε=0.20 白盒FR=0.999 (30.8s)
+  [mobilenet_v2] seed1342 lws ε=0.30 白盒FR=0.999 (30.6s)
+  [mobilenet_v2] seed1342 lws_r ε=0.10 白盒FR=0.997 (34.5s)
+  [mobilenet_v2] seed1342 lws_r ε=0.20 白盒FR=0.999 (34.5s)
+  [mobilenet_v2] seed1342 lws_r ε=0.30 白盒FR=0.999 (34.6s)
+  [mobilenet_v2] seed1342 ceiling ε=0.10 白盒FR=0.998
+  [mobilenet_v2] seed1342 ceiling ε=0.20 白盒FR=0.999
+  [mobilenet_v2] seed1342 ceiling ε=0.30 白盒FR=0.999
+[保存] results_fewshot/results_fewshot_imagenet_mobilenet_v2_seed1342.json
+  [mobilenet_v2] seed2342 direct ε=0.10 白盒FR=0.996 (30.4s)
+  [mobilenet_v2] seed2342 direct ε=0.20 白盒FR=0.999 (30.5s)
+  [mobilenet_v2] seed2342 direct ε=0.30 白盒FR=0.999 (30.7s)
+  [mobilenet_v2] seed2342 direct_lr0.002 ε=0.10 白盒FR=0.439 (30.8s)
+  [mobilenet_v2] seed2342 direct_lr0.002 ε=0.20 白盒FR=0.431 (30.6s)
+  [mobilenet_v2] seed2342 direct_lr0.002 ε=0.30 白盒FR=0.434 (30.6s)
+  [mobilenet_v2] seed2342 direct_lr0.05 ε=0.10 白盒FR=0.997 (30.7s)
+  [mobilenet_v2] seed2342 direct_lr0.05 ε=0.20 白盒FR=0.999 (30.8s)
+  [mobilenet_v2] seed2342 direct_lr0.05 ε=0.30 白盒FR=0.999 (30.8s)
+  [mobilenet_v2] seed2342 pdua ε=0.10 白盒FR=0.357 (30.8s)
+  [mobilenet_v2] seed2342 pdua ε=0.20 白盒FR=0.351 (32.0s)
+  [mobilenet_v2] seed2342 pdua ε=0.30 白盒FR=0.348 (30.8s)
+  [mobilenet_v2] seed2342 lws ε=0.10 白盒FR=0.995 (30.8s)
+  [mobilenet_v2] seed2342 lws ε=0.20 白盒FR=0.999 (30.7s)
+  [mobilenet_v2] seed2342 lws ε=0.30 白盒FR=0.999 (30.6s)
+  [mobilenet_v2] seed2342 lws_r ε=0.10 白盒FR=0.995 (34.5s)
+  [mobilenet_v2] seed2342 lws_r ε=0.20 白盒FR=0.999 (34.5s)
+  [mobilenet_v2] seed2342 lws_r ε=0.30 白盒FR=0.999 (34.6s)
+  [mobilenet_v2] seed2342 ceiling ε=0.10 白盒FR=0.999
+  [mobilenet_v2] seed2342 ceiling ε=0.20 白盒FR=0.999
+  [mobilenet_v2] seed2342 ceiling ε=0.30 白盒FR=0.999
+[保存] results_fewshot/results_fewshot_imagenet_mobilenet_v2_seed2342.json

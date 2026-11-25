@@ -1,0 +1,301 @@
+{
+  "surrogate": "vgg16_bn",
+  "seed": 1342,
+  "config": {
+    "dataset": "imagenet",
+    "surrogate": "vgg16_bn",
+    "models": "auto",
+    "eps_targets": "0.1,0.2,0.3",
+    "eps_w": 0.05,
+    "few_k": 200,
+    "many": 2000,
+    "steps": 200,
+    "steps_ceiling": 500,
+    "lr": 0.01,
+    "seeds": "42,1342,2342",
+    "out_dir": "results_fewshot_reuse",
+    "out_tag": "vgg16_bn"
+  },
+  "methods": {
+    "reuse_lws": {
+      "0.1": {
+        "resnet50": {
+          "fr_all": 0.626,
+          "asr_correct": 0.5327597617471873,
+          "sat_frac": 0.9441897869110107
+        },
+        "vgg16_bn": {
+          "fr_all": 0.9955,
+          "asr_correct": 0.994535519125683,
+          "sat_frac": 0.9441897869110107
+        },
+        "resnet101": {
+          "fr_all": 0.581,
+          "asr_correct": 0.4823529411764706,
+          "sat_frac": 0.9441897869110107
+        },
+        "mobilenet_v2": {
+          "fr_all": 0.823,
+          "asr_correct": 0.7773167358229599,
+          "sat_frac": 0.9441897869110107
+        }
+      },
+      "0.2": {
+        "resnet50": {
+          "fr_all": 0.924,
+          "asr_correct": 0.9106551952349438,
+          "sat_frac": 0.9441897869110107
+        },
+        "vgg16_bn": {
+          "fr_all": 0.9995,
+          "asr_correct": 0.9993169398907104,
+          "sat_frac": 0.9441897869110107
+        },
+        "resnet101": {
+          "fr_all": 0.9135,
+          "asr_correct": 0.8967320261437909,
+          "sat_frac": 0.9441897869110107
+        },
+        "mobilenet_v2": {
+          "fr_all": 0.985,
+          "asr_correct": 0.9813278008298755,
+          "sat_frac": 0.9441897869110107
+        }
+      },
+      "0.3": {
+        "resnet50": {
+          "fr_all": 0.9895,
+          "asr_correct": 0.986763732627399,
+          "sat_frac": 0.9441897869110107
+        },
+        "vgg16_bn": {
+          "fr_all": 0.9995,
+          "asr_correct": 0.9993169398907104,
+          "sat_frac": 0.9441897869110107
+        },
+        "resnet101": {
+          "fr_all": 0.9895,
+          "asr_correct": 0.9888888888888889,
+          "sat_frac": 0.9441897869110107
+        },
+        "mobilenet_v2": {
+          "fr_all": 0.997,
+          "asr_correct": 0.9965421853388658,
+          "sat_frac": 0.9441897869110107
+        }
+      }
+    },
+    "direct": {
+      "0.1": {
+        "resnet50": {
+          "fr_all": 0.7015,
+          "asr_correct": 0.6313699536730641,
+          "sat_frac": 0.8282378911972046
+        },
+        "vgg16_bn": {
+          "fr_all": 0.9985,
+          "asr_correct": 0.9979508196721312,
+          "sat_frac": 0.8282378911972046
+        },
+        "resnet101": {
+          "fr_all": 0.727,
+          "asr_correct": 0.661437908496732,
+          "sat_frac": 0.8282378911972046
+        },
+        "mobilenet_v2": {
+          "fr_all": 0.911,
+          "asr_correct": 0.8865836791147994,
+          "sat_frac": 0.8282378911972046
+        }
+      },
+      "0.2": {
+        "resnet50": {
+          "fr_all": 0.976,
+          "asr_correct": 0.971542025148908,
+          "sat_frac": 0.6736952662467957
+        },
+        "vgg16_bn": {
+          "fr_all": 0.999,
+          "asr_correct": 0.9986338797814208,
+          "sat_frac": 0.6736952662467957
+        },
+        "resnet101": {
+          "fr_all": 0.968,
+          "asr_correct": 0.9620915032679739,
+          "sat_frac": 0.6736952662467957
+        },
+        "mobilenet_v2": {
+          "fr_all": 0.991,
+          "asr_correct": 0.9903181189488244,
+          "sat_frac": 0.6736952662467957
+        }
+      },
+      "0.3": {
+        "resnet50": {
+          "fr_all": 0.9935,
+          "asr_correct": 0.9920582395764395,
+          "sat_frac": 0.5330569744110107
+        },
+        "vgg16_bn": {
+          "fr_all": 0.999,
+          "asr_correct": 0.9986338797814208,
+          "sat_frac": 0.5330569744110107
+        },
+        "resnet101": {
+          "fr_all": 0.99,
+          "asr_correct": 0.9875816993464053,
+          "sat_frac": 0.5330569744110107
+        },
+        "mobilenet_v2": {
+          "fr_all": 0.9965,
+          "asr_correct": 0.995850622406639,
+          "sat_frac": 0.5330569744110107
+        }
+      }
+    },
+    "direct_lr0.05": {
+      "0.1": {
+        "resnet50": {
+          "fr_all": 0.59,
+          "asr_correct": 0.48643282594308407,
+          "sat_frac": 0.9680989384651184
+        },
+        "vgg16_bn": {
+          "fr_all": 0.997,
+          "asr_correct": 0.9959016393442623,
+          "sat_frac": 0.9680989384651184
+        },
+        "resnet101": {
+          "fr_all": 0.537,
+          "asr_correct": 0.4300653594771242,
+          "sat_frac": 0.9680989384651184
+        },
+        "mobilenet_v2": {
+          "fr_all": 0.8025,
+          "asr_correct": 0.7510373443983402,
+          "sat_frac": 0.9680989384651184
+        }
+      },
+      "0.2": {
+        "resnet50": {
+          "fr_all": 0.941,
+          "asr_correct": 0.9291859695565851,
+          "sat_frac": 0.8753719925880432
+        },
+        "vgg16_bn": {
+          "fr_all": 0.999,
+          "asr_correct": 0.9986338797814208,
+          "sat_frac": 0.8753719925880432
+        },
+        "resnet101": {
+          "fr_all": 0.9375,
+          "asr_correct": 0.9267973856209151,
+          "sat_frac": 0.8753719925880432
+        },
+        "mobilenet_v2": {
+          "fr_all": 0.991,
+          "asr_correct": 0.9882434301521439,
+          "sat_frac": 0.8753719925880432
+        }
+      },
+      "0.3": {
+        "resnet50": {
+          "fr_all": 0.989,
+          "asr_correct": 0.986763732627399,
+          "sat_frac": 0.8078031539916992
+        },
+        "vgg16_bn": {
+          "fr_all": 0.999,
+          "asr_correct": 0.9986338797814208,
+          "sat_frac": 0.8078031539916992
+        },
+        "resnet101": {
+          "fr_all": 0.993,
+          "asr_correct": 0.9915032679738562,
+          "sat_frac": 0.8078031539916992
+        },
+        "mobilenet_v2": {
+          "fr_all": 0.9975,
+          "asr_correct": 0.9965421853388658,
+          "sat_frac": 0.8078031539916992
+        }
+      }
+    }
+  },
+  "ceiling": {
+    "0.1": {
+      "resnet50": {
+        "fr_all": 0.845,
+        "asr_correct": 0.8080741230972865,
+        "sat_frac": 0.8938602805137634
+      },
+      "vgg16_bn": {
+        "fr_all": 0.998,
+        "asr_correct": 0.9972677595628415,
+        "sat_frac": 0.8938602805137634
+      },
+      "resnet101": {
+        "fr_all": 0.794,
+        "asr_correct": 0.74640522875817,
+        "sat_frac": 0.8938602805137634
+      },
+      "mobilenet_v2": {
+        "fr_all": 0.9615,
+        "asr_correct": 0.9495159059474412,
+        "sat_frac": 0.8938602805137634
+      }
+    },
+    "0.2": {
+      "resnet50": {
+        "fr_all": 0.9845,
+        "asr_correct": 0.9814692256783587,
+        "sat_frac": 0.8126261830329895
+      },
+      "vgg16_bn": {
+        "fr_all": 0.999,
+        "asr_correct": 0.9986338797814208,
+        "sat_frac": 0.8126261830329895
+      },
+      "resnet101": {
+        "fr_all": 0.979,
+        "asr_correct": 0.9764705882352941,
+        "sat_frac": 0.8126261830329895
+      },
+      "mobilenet_v2": {
+        "fr_all": 0.998,
+        "asr_correct": 0.9972337482710927,
+        "sat_frac": 0.8126261830329895
+      }
+    },
+    "0.3": {
+      "resnet50": {
+        "fr_all": 0.9955,
+        "asr_correct": 0.9940436796823295,
+        "sat_frac": 0.7218191623687744
+      },
+      "vgg16_bn": {
+        "fr_all": 0.9985,
+        "asr_correct": 0.9979508196721312,
+        "sat_frac": 0.7218191623687744
+      },
+      "resnet101": {
+        "fr_all": 0.9945,
+        "asr_correct": 0.9934640522875817,
+        "sat_frac": 0.7218191623687744
+      },
+      "mobilenet_v2": {
+        "fr_all": 0.998,
+        "asr_correct": 0.9979253112033195,
+        "sat_frac": 0.7218191623687744
+      }
+    }
+  },
+  "meta": {
+    "reuse_train_time_w": 74.73171043395996,
+    "reuse_n_train_runs": 1,
+    "direct_train_time_total": 227.90567421913147,
+    "direct_n_train_runs": 3,
+    "direct_lr0.05_train_time_total": 228.31740474700928,
+    "direct_lr0.05_n_train_runs": 3
+  }
+}

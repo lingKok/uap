@@ -1,0 +1,1705 @@
+{
+  "dataset": "cifar10",
+  "surrogate": "resnet50",
+  "seed": 2342,
+  "config": {
+    "surrogate": "resnet50",
+    "models": "auto",
+    "methods": "direct,tsc,uap2017,dmuap",
+    "eps_w": 0.05,
+    "eps_hi": 0.3,
+    "eps_targets": "0.1,0.2,0.3",
+    "few_k": 200,
+    "many": 2000,
+    "steps": 200,
+    "lr": 0.01,
+    "lr_uap2017": 0.02,
+    "batch_size": 128,
+    "tsc_alpha": 4,
+    "skip_modern": false,
+    "dm_steps": 60,
+    "dm_batch": 128,
+    "dm_beta": 9.0,
+    "dm_step_decay": 0.1,
+    "dm_rho": 4.0,
+    "dm_aa": 25.0,
+    "dm_cc": 10,
+    "dm_theta_steps": 10,
+    "dm_smooth": 0.2,
+    "dm_momentum": 0,
+    "dm_cross_loss": 1,
+    "seeds": "42,1342,2342",
+    "eval_n": 2000,
+    "eval_batch": 512,
+    "out_dir": "results_cifar_control"
+  },
+  "eps_w": 0.05,
+  "eps_hi": 0.3,
+  "budgets": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "methods": {
+    "direct": {
+      "0.1": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.974609375
+          },
+          "resnet34": {
+            "fr_all": 0.8895,
+            "asr_correct": 0.182648401826484,
+            "sat_frac": 0.974609375
+          },
+          "resnet50": {
+            "fr_all": 0.907,
+            "asr_correct": 0.06417112299465241,
+            "sat_frac": 0.974609375
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.974609375
+          },
+          "densenet121": {
+            "fr_all": 0.8925,
+            "asr_correct": 0.08260869565217391,
+            "sat_frac": 0.974609375
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.974609375
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.974609375
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.974609375
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9690755605697632
+          },
+          "resnet34": {
+            "fr_all": 0.8825,
+            "asr_correct": 0.1780821917808219,
+            "sat_frac": 0.9690755605697632
+          },
+          "resnet50": {
+            "fr_all": 0.9075,
+            "asr_correct": 0.06951871657754011,
+            "sat_frac": 0.9690755605697632
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9690755605697632
+          },
+          "densenet121": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.09565217391304348,
+            "sat_frac": 0.9690755605697632
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9690755605697632
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9690755605697632
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9690755605697632
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "resnet34": {
+            "fr_all": 0.8855,
+            "asr_correct": 0.1506849315068493,
+            "sat_frac": 0.9889323115348816
+          },
+          "resnet50": {
+            "fr_all": 0.908,
+            "asr_correct": 0.06417112299465241,
+            "sat_frac": 0.9889323115348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "densenet121": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.09130434782608696,
+            "sat_frac": 0.9889323115348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9889323115348816
+          }
+        }
+      },
+      "0.2": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9440104365348816
+          },
+          "resnet34": {
+            "fr_all": 0.8925,
+            "asr_correct": 0.3470319634703196,
+            "sat_frac": 0.9440104365348816
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.06951871657754011,
+            "sat_frac": 0.9440104365348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9440104365348816
+          },
+          "densenet121": {
+            "fr_all": 0.895,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9440104365348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9440104365348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9440104365348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9440104365348816
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9381510615348816
+          },
+          "resnet34": {
+            "fr_all": 0.885,
+            "asr_correct": 0.3607305936073059,
+            "sat_frac": 0.9381510615348816
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.06951871657754011,
+            "sat_frac": 0.9381510615348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9381510615348816
+          },
+          "densenet121": {
+            "fr_all": 0.895,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9381510615348816
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 0.9381510615348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9381510615348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9381510615348816
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "resnet34": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.2557077625570776,
+            "sat_frac": 0.9889323115348816
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.06417112299465241,
+            "sat_frac": 0.9889323115348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "densenet121": {
+            "fr_all": 0.895,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9889323115348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9889323115348816
+          }
+        }
+      },
+      "0.3": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9166666865348816
+          },
+          "resnet34": {
+            "fr_all": 0.878,
+            "asr_correct": 0.4383561643835616,
+            "sat_frac": 0.9166666865348816
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.06951871657754011,
+            "sat_frac": 0.9166666865348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9166666865348816
+          },
+          "densenet121": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9166666865348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9166666865348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9166666865348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9166666865348816
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9166666865348816
+          },
+          "resnet34": {
+            "fr_all": 0.878,
+            "asr_correct": 0.4383561643835616,
+            "sat_frac": 0.9166666865348816
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.06951871657754011,
+            "sat_frac": 0.9166666865348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9166666865348816
+          },
+          "densenet121": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9166666865348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9166666865348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9166666865348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9166666865348816
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "resnet34": {
+            "fr_all": 0.8975,
+            "asr_correct": 0.3789954337899543,
+            "sat_frac": 0.9889323115348816
+          },
+          "resnet50": {
+            "fr_all": 0.906,
+            "asr_correct": 0.06417112299465241,
+            "sat_frac": 0.9889323115348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "densenet121": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9889323115348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9889323115348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9889323115348816
+          }
+        }
+      }
+    },
+    "tsc": {
+      "0.1": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "resnet34": {
+            "fr_all": 0.8875,
+            "asr_correct": 0.1232876712328767,
+            "sat_frac": 1.0
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.0374331550802139,
+            "sat_frac": 1.0
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "densenet121": {
+            "fr_all": 0.8925,
+            "asr_correct": 0.08260869565217391,
+            "sat_frac": 1.0
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 1.0
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "resnet34": {
+            "fr_all": 0.888,
+            "asr_correct": 0.1461187214611872,
+            "sat_frac": 1.0
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.0374331550802139,
+            "sat_frac": 1.0
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "densenet121": {
+            "fr_all": 0.894,
+            "asr_correct": 0.09565217391304348,
+            "sat_frac": 1.0
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 1.0
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "resnet34": {
+            "fr_all": 0.8855,
+            "asr_correct": 0.091324200913242,
+            "sat_frac": 1.0
+          },
+          "resnet50": {
+            "fr_all": 0.9075,
+            "asr_correct": 0.0427807486631016,
+            "sat_frac": 1.0
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "densenet121": {
+            "fr_all": 0.8915,
+            "asr_correct": 0.07391304347826087,
+            "sat_frac": 1.0
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 1.0
+          }
+        }
+      },
+      "0.2": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "resnet34": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.319634703196347,
+            "sat_frac": 1.0
+          },
+          "resnet50": {
+            "fr_all": 0.9075,
+            "asr_correct": 0.06417112299465241,
+            "sat_frac": 1.0
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "densenet121": {
+            "fr_all": 0.895,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 1.0
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 1.0
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 1.0
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "resnet34": {
+            "fr_all": 0.8875,
+            "asr_correct": 0.2922374429223744,
+            "sat_frac": 0.9947916865348816
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.058823529411764705,
+            "sat_frac": 0.9947916865348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "densenet121": {
+            "fr_all": 0.895,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9947916865348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9947916865348816
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "resnet34": {
+            "fr_all": 0.8875,
+            "asr_correct": 0.1689497716894977,
+            "sat_frac": 1.0
+          },
+          "resnet50": {
+            "fr_all": 0.908,
+            "asr_correct": 0.06417112299465241,
+            "sat_frac": 1.0
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "densenet121": {
+            "fr_all": 0.895,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 1.0
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 1.0
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 1.0
+          }
+        }
+      },
+      "0.3": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "resnet34": {
+            "fr_all": 0.889,
+            "asr_correct": 0.4155251141552511,
+            "sat_frac": 0.9947916865348816
+          },
+          "resnet50": {
+            "fr_all": 0.907,
+            "asr_correct": 0.06951871657754011,
+            "sat_frac": 0.9947916865348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "densenet121": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9947916865348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9947916865348816
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "resnet34": {
+            "fr_all": 0.889,
+            "asr_correct": 0.4155251141552511,
+            "sat_frac": 0.9947916865348816
+          },
+          "resnet50": {
+            "fr_all": 0.907,
+            "asr_correct": 0.06951871657754011,
+            "sat_frac": 0.9947916865348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "densenet121": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9947916865348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9947916865348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9947916865348816
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "resnet34": {
+            "fr_all": 0.884,
+            "asr_correct": 0.2374429223744292,
+            "sat_frac": 1.0
+          },
+          "resnet50": {
+            "fr_all": 0.9075,
+            "asr_correct": 0.0748663101604278,
+            "sat_frac": 1.0
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "densenet121": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 1.0
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 1.0
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 1.0
+          }
+        }
+      }
+    },
+    "uap2017": {
+      "0.1": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.1077473983168602
+          },
+          "resnet34": {
+            "fr_all": 0.8885,
+            "asr_correct": 0.1095890410958904,
+            "sat_frac": 0.1077473983168602
+          },
+          "resnet50": {
+            "fr_all": 0.9325,
+            "asr_correct": 0.5401069518716578,
+            "sat_frac": 0.1077473983168602
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.1077473983168602
+          },
+          "densenet121": {
+            "fr_all": 0.887,
+            "asr_correct": 0.02608695652173913,
+            "sat_frac": 0.1077473983168602
+          },
+          "resnet101": {
+            "fr_all": 0.894,
+            "asr_correct": 0.0,
+            "sat_frac": 0.1077473983168602
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.1077473983168602
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.1077473983168602
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.1569010466337204
+          },
+          "resnet34": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.1552511415525114,
+            "sat_frac": 0.1569010466337204
+          },
+          "resnet50": {
+            "fr_all": 0.937,
+            "asr_correct": 0.5614973262032086,
+            "sat_frac": 0.1569010466337204
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.1569010466337204
+          },
+          "densenet121": {
+            "fr_all": 0.888,
+            "asr_correct": 0.034782608695652174,
+            "sat_frac": 0.1569010466337204
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 0.1569010466337204
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.1569010466337204
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.1569010466337204
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "resnet34": {
+            "fr_all": 0.887,
+            "asr_correct": 0.1552511415525114,
+            "sat_frac": 0.2815755307674408
+          },
+          "resnet50": {
+            "fr_all": 0.9405,
+            "asr_correct": 0.8021390374331551,
+            "sat_frac": 0.2815755307674408
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "densenet121": {
+            "fr_all": 0.8885,
+            "asr_correct": 0.0391304347826087,
+            "sat_frac": 0.2815755307674408
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.2815755307674408
+          }
+        }
+      },
+      "0.2": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.0
+          },
+          "resnet34": {
+            "fr_all": 0.892,
+            "asr_correct": 0.1506849315068493,
+            "sat_frac": 0.0
+          },
+          "resnet50": {
+            "fr_all": 0.9275,
+            "asr_correct": 0.45454545454545453,
+            "sat_frac": 0.0
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.0
+          },
+          "densenet121": {
+            "fr_all": 0.887,
+            "asr_correct": 0.02608695652173913,
+            "sat_frac": 0.0
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 0.0
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.0
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.0
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.004557291977107525
+          },
+          "resnet34": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.1917808219178082,
+            "sat_frac": 0.004557291977107525
+          },
+          "resnet50": {
+            "fr_all": 0.9405,
+            "asr_correct": 0.6844919786096256,
+            "sat_frac": 0.004557291977107525
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.004557291977107525
+          },
+          "densenet121": {
+            "fr_all": 0.8885,
+            "asr_correct": 0.0391304347826087,
+            "sat_frac": 0.004557291977107525
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 0.004557291977107525
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.004557291977107525
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.004557291977107525
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "resnet34": {
+            "fr_all": 0.892,
+            "asr_correct": 0.319634703196347,
+            "sat_frac": 0.2815755307674408
+          },
+          "resnet50": {
+            "fr_all": 0.921,
+            "asr_correct": 0.9144385026737968,
+            "sat_frac": 0.2815755307674408
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "densenet121": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.08695652173913043,
+            "sat_frac": 0.2815755307674408
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.2815755307674408
+          }
+        }
+      },
+      "0.3": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.0
+          },
+          "resnet34": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.1917808219178082,
+            "sat_frac": 0.0
+          },
+          "resnet50": {
+            "fr_all": 0.9395,
+            "asr_correct": 0.679144385026738,
+            "sat_frac": 0.0
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.0
+          },
+          "densenet121": {
+            "fr_all": 0.8885,
+            "asr_correct": 0.0391304347826087,
+            "sat_frac": 0.0
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 0.0
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.0
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.0
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.0
+          },
+          "resnet34": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.1917808219178082,
+            "sat_frac": 0.0
+          },
+          "resnet50": {
+            "fr_all": 0.9395,
+            "asr_correct": 0.679144385026738,
+            "sat_frac": 0.0
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.0
+          },
+          "densenet121": {
+            "fr_all": 0.8885,
+            "asr_correct": 0.0391304347826087,
+            "sat_frac": 0.0
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 0.0
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.0
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.0
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "resnet34": {
+            "fr_all": 0.889,
+            "asr_correct": 0.410958904109589,
+            "sat_frac": 0.2815755307674408
+          },
+          "resnet50": {
+            "fr_all": 0.909,
+            "asr_correct": 0.93048128342246,
+            "sat_frac": 0.2815755307674408
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "densenet121": {
+            "fr_all": 0.8955,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.2815755307674408
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.2815755307674408
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.2815755307674408
+          }
+        }
+      }
+    },
+    "dmuap": {
+      "0.1": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9749349355697632
+          },
+          "resnet34": {
+            "fr_all": 0.882,
+            "asr_correct": 0.182648401826484,
+            "sat_frac": 0.9749349355697632
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.06417112299465241,
+            "sat_frac": 0.9749349355697632
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9749349355697632
+          },
+          "densenet121": {
+            "fr_all": 0.8925,
+            "asr_correct": 0.07391304347826087,
+            "sat_frac": 0.9749349355697632
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9749349355697632
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9749349355697632
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9749349355697632
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.8772786855697632
+          },
+          "resnet34": {
+            "fr_all": 0.8865,
+            "asr_correct": 0.2054794520547945,
+            "sat_frac": 0.8772786855697632
+          },
+          "resnet50": {
+            "fr_all": 0.911,
+            "asr_correct": 0.0748663101604278,
+            "sat_frac": 0.8772786855697632
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.8772786855697632
+          },
+          "densenet121": {
+            "fr_all": 0.8915,
+            "asr_correct": 0.06521739130434782,
+            "sat_frac": 0.8772786855697632
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 0.8772786855697632
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.8772786855697632
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.8772786855697632
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "resnet34": {
+            "fr_all": 0.8825,
+            "asr_correct": 0.1735159817351598,
+            "sat_frac": 0.9915364980697632
+          },
+          "resnet50": {
+            "fr_all": 0.9055,
+            "asr_correct": 0.03208556149732621,
+            "sat_frac": 0.9915364980697632
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "densenet121": {
+            "fr_all": 0.892,
+            "asr_correct": 0.06956521739130435,
+            "sat_frac": 0.9915364980697632
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 0.9915364980697632
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9915364980697632
+          }
+        }
+      },
+      "0.2": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.751953125
+          },
+          "resnet34": {
+            "fr_all": 0.8775,
+            "asr_correct": 0.365296803652968,
+            "sat_frac": 0.751953125
+          },
+          "resnet50": {
+            "fr_all": 0.907,
+            "asr_correct": 0.06417112299465241,
+            "sat_frac": 0.751953125
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.751953125
+          },
+          "densenet121": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.08695652173913043,
+            "sat_frac": 0.751953125
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.751953125
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.751953125
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.751953125
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.7561849355697632
+          },
+          "resnet34": {
+            "fr_all": 0.8845,
+            "asr_correct": 0.3744292237442922,
+            "sat_frac": 0.7561849355697632
+          },
+          "resnet50": {
+            "fr_all": 0.9085,
+            "asr_correct": 0.08021390374331551,
+            "sat_frac": 0.7561849355697632
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.7561849355697632
+          },
+          "densenet121": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.09565217391304348,
+            "sat_frac": 0.7561849355697632
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.7561849355697632
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.7561849355697632
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.7561849355697632
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "resnet34": {
+            "fr_all": 0.8775,
+            "asr_correct": 0.3515981735159817,
+            "sat_frac": 0.9915364980697632
+          },
+          "resnet50": {
+            "fr_all": 0.9065,
+            "asr_correct": 0.0481283422459893,
+            "sat_frac": 0.9915364980697632
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "densenet121": {
+            "fr_all": 0.895,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9915364980697632
+          },
+          "resnet101": {
+            "fr_all": 0.895,
+            "asr_correct": 0.004739336492890996,
+            "sat_frac": 0.9915364980697632
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9915364980697632
+          }
+        }
+      },
+      "0.3": {
+        "pereps": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.5641276240348816
+          },
+          "resnet34": {
+            "fr_all": 0.884,
+            "asr_correct": 0.4885844748858447,
+            "sat_frac": 0.5641276240348816
+          },
+          "resnet50": {
+            "fr_all": 0.9095,
+            "asr_correct": 0.09090909090909091,
+            "sat_frac": 0.5641276240348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.5641276240348816
+          },
+          "densenet121": {
+            "fr_all": 0.895,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.5641276240348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.5641276240348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.5641276240348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.5641276240348816
+          }
+        },
+        "clipdown": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.5641276240348816
+          },
+          "resnet34": {
+            "fr_all": 0.884,
+            "asr_correct": 0.4885844748858447,
+            "sat_frac": 0.5641276240348816
+          },
+          "resnet50": {
+            "fr_all": 0.9095,
+            "asr_correct": 0.09090909090909091,
+            "sat_frac": 0.5641276240348816
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.5641276240348816
+          },
+          "densenet121": {
+            "fr_all": 0.895,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.5641276240348816
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.5641276240348816
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.5641276240348816
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.5641276240348816
+          }
+        },
+        "scaleup": {
+          "resnet18": {
+            "fr_all": 0.8935,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "resnet34": {
+            "fr_all": 0.8665,
+            "asr_correct": 0.4657534246575342,
+            "sat_frac": 0.9915364980697632
+          },
+          "resnet50": {
+            "fr_all": 0.9075,
+            "asr_correct": 0.06417112299465241,
+            "sat_frac": 0.9915364980697632
+          },
+          "vgg16_bn": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "densenet121": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.10434782608695652,
+            "sat_frac": 0.9915364980697632
+          },
+          "resnet101": {
+            "fr_all": 0.8945,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "mobilenet_v2": {
+            "fr_all": 0.9045,
+            "asr_correct": 0.0,
+            "sat_frac": 0.9915364980697632
+          },
+          "shufflenet_v2_x1_0": {
+            "fr_all": 1.0,
+            "asr_correct": null,
+            "sat_frac": 0.9915364980697632
+          }
+        }
+      }
+    }
+  },
+  "delta_stats": {
+    "direct@0.1": {
+      "clip_frac": 0.9690755605697632,
+      "sat_clipdown": 0.9690755605697632,
+      "sat_scaleup": 0.9889323115348816,
+      "sat_pereps": 0.974609375,
+      "sat_train@eps_w": 0.9889323115348816,
+      "sat_train@eps_hi": 0.9166666865348816
+    },
+    "direct@0.2": {
+      "clip_frac": 0.9381510615348816,
+      "sat_clipdown": 0.9381510615348816,
+      "sat_scaleup": 0.9889323115348816,
+      "sat_pereps": 0.9440104365348816,
+      "sat_train@eps_w": 0.9889323115348816,
+      "sat_train@eps_hi": 0.9166666865348816
+    },
+    "direct@0.3": {
+      "clip_frac": 0.0,
+      "sat_clipdown": 0.9166666865348816,
+      "sat_scaleup": 0.9889323115348816,
+      "sat_pereps": 0.9166666865348816,
+      "sat_train@eps_w": 0.9889323115348816,
+      "sat_train@eps_hi": 0.9166666865348816
+    },
+    "tsc@0.1": {
+      "clip_frac": 1.0,
+      "sat_clipdown": 1.0,
+      "sat_scaleup": 1.0,
+      "sat_pereps": 1.0,
+      "sat_train@eps_w": 1.0,
+      "sat_train@eps_hi": 0.9947916865348816
+    },
+    "tsc@0.2": {
+      "clip_frac": 0.9947916865348816,
+      "sat_clipdown": 0.9947916865348816,
+      "sat_scaleup": 1.0,
+      "sat_pereps": 1.0,
+      "sat_train@eps_w": 1.0,
+      "sat_train@eps_hi": 0.9947916865348816
+    },
+    "tsc@0.3": {
+      "clip_frac": 0.0,
+      "sat_clipdown": 0.9947916865348816,
+      "sat_scaleup": 1.0,
+      "sat_pereps": 0.9947916865348816,
+      "sat_train@eps_w": 1.0,
+      "sat_train@eps_hi": 0.9947916865348816
+    },
+    "uap2017@0.1": {
+      "clip_frac": 0.1549479216337204,
+      "sat_clipdown": 0.1569010466337204,
+      "sat_scaleup": 0.2815755307674408,
+      "sat_pereps": 0.1077473983168602,
+      "sat_train@eps_w": 0.2815755307674408,
+      "sat_train@eps_hi": 0.0
+    },
+    "uap2017@0.2": {
+      "clip_frac": 0.004557291977107525,
+      "sat_clipdown": 0.004557291977107525,
+      "sat_scaleup": 0.2815755307674408,
+      "sat_pereps": 0.0,
+      "sat_train@eps_w": 0.2815755307674408,
+      "sat_train@eps_hi": 0.0
+    },
+    "uap2017@0.3": {
+      "clip_frac": 0.0,
+      "sat_clipdown": 0.0,
+      "sat_scaleup": 0.2815755307674408,
+      "sat_pereps": 0.0,
+      "sat_train@eps_w": 0.2815755307674408,
+      "sat_train@eps_hi": 0.0
+    },
+    "dmuap@0.1": {
+      "clip_frac": 0.8763021230697632,
+      "sat_clipdown": 0.8772786855697632,
+      "sat_scaleup": 0.9915364980697632,
+      "sat_pereps": 0.9749349355697632,
+      "sat_train@eps_w": 0.9915364980697632,
+      "sat_train@eps_hi": 0.5641276240348816
+    },
+    "dmuap@0.2": {
+      "clip_frac": 0.755859375,
+      "sat_clipdown": 0.7561849355697632,
+      "sat_scaleup": 0.9915364980697632,
+      "sat_pereps": 0.751953125,
+      "sat_train@eps_w": 0.9915364980697632,
+      "sat_train@eps_hi": 0.5641276240348816
+    },
+    "dmuap@0.3": {
+      "clip_frac": 0.0,
+      "sat_clipdown": 0.5641276240348816,
+      "sat_scaleup": 0.9915364980697632,
+      "sat_pereps": 0.5641276240348816,
+      "sat_train@eps_w": 0.9915364980697632,
+      "sat_train@eps_hi": 0.5641276240348816
+    }
+  },
+  "meta": {
+    "direct_train_time@0.05": 6.241468191146851,
+    "direct_train_time@0.1": 6.221990346908569,
+    "direct_train_time@0.2": 6.221482276916504,
+    "direct_train_time@0.3": 6.225342750549316,
+    "tsc_train_time@0.05": 6.299933910369873,
+    "tsc_train_time@0.1": 6.289472818374634,
+    "tsc_train_time@0.2": 6.290230751037598,
+    "tsc_train_time@0.3": 6.28758978843689,
+    "uap2017_train_time@0.05": 2.7476861476898193,
+    "uap2017_train_time@0.1": 2.4624688625335693,
+    "uap2017_train_time@0.2": 3.5958666801452637,
+    "uap2017_train_time@0.3": 2.5230166912078857,
+    "dmuap_train_time@0.05": 31.708963871002197,
+    "dmuap_train_time@0.1": 31.87996554374695,
+    "dmuap_train_time@0.2": 31.787927627563477,
+    "dmuap_train_time@0.3": 31.80271577835083
+  }
+}

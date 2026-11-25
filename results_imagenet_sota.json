@@ -1,0 +1,168 @@
+{
+  "results": {
+    "UAP-SGD": {
+      "resnet50": 0.362,
+      "vgg16_bn": 0.956,
+      "resnet101": 0.364,
+      "mobilenet_v2": 0.62,
+      "shufflenet_v2_x1_0": 0.584
+    },
+    "PD-UA": {
+      "resnet50": 0.28,
+      "vgg16_bn": 0.286,
+      "resnet101": 0.262,
+      "mobilenet_v2": 0.308,
+      "shufflenet_v2_x1_0": 0.334
+    },
+    "SSA": {
+      "resnet50": 0.242,
+      "vgg16_bn": 0.262,
+      "resnet101": 0.232,
+      "mobilenet_v2": 0.274,
+      "shufflenet_v2_x1_0": 0.304
+    },
+    "Gen-UAP": {
+      "resnet50": 0.254,
+      "vgg16_bn": 0.27,
+      "resnet101": 0.24,
+      "mobilenet_v2": 0.286,
+      "shufflenet_v2_x1_0": 0.31
+    },
+    "Meta-0": {
+      "resnet50": 0.328,
+      "vgg16_bn": 0.372,
+      "resnet101": 0.316,
+      "mobilenet_v2": 0.394,
+      "shufflenet_v2_x1_0": 0.434
+    },
+    "Meta-5": {
+      "resnet50": 0.352,
+      "vgg16_bn": 0.42,
+      "resnet101": 0.332,
+      "mobilenet_v2": 0.432,
+      "shufflenet_v2_x1_0": 0.462
+    },
+    "Meta-10": {
+      "resnet50": 0.36,
+      "vgg16_bn": 0.436,
+      "resnet101": 0.342,
+      "mobilenet_v2": 0.452,
+      "shufflenet_v2_x1_0": 0.478
+    }
+  },
+  "timing": {
+    "UAP-SGD": {
+      "resnet50": 8.79252576828003,
+      "vgg16_bn": 19.478623390197754,
+      "resnet101": 14.228835105895996,
+      "mobilenet_v2": 3.8964877128601074,
+      "shufflenet_v2_x1_0": 1.527174949645996
+    },
+    "PD-UA": {
+      "resnet50": 8.595487356185913,
+      "vgg16_bn": 19.23698616027832,
+      "resnet101": 14.343390941619873,
+      "mobilenet_v2": 4.008161783218384,
+      "shufflenet_v2_x1_0": 1.6063330173492432
+    },
+    "SSA": {
+      "resnet50": 0.08337807655334473,
+      "vgg16_bn": 0.06500935554504395,
+      "resnet101": 0.06805181503295898,
+      "mobilenet_v2": 0.079345703125,
+      "shufflenet_v2_x1_0": 0.023955821990966797
+    },
+    "Gen-UAP": {
+      "resnet50": 0.9005663394927979,
+      "vgg16_bn": 1.9552979469299316,
+      "resnet101": 1.497852087020874,
+      "mobilenet_v2": 0.4313647747039795,
+      "shufflenet_v2_x1_0": 0.18716216087341309
+    },
+    "Meta-0": {},
+    "Meta-5": {
+      "resnet50": 0.8590307235717773,
+      "vgg16_bn": 2.0986807346343994,
+      "resnet101": 1.424328327178955,
+      "mobilenet_v2": 0.3856480121612549,
+      "shufflenet_v2_x1_0": 0.15913844108581543
+    },
+    "Meta-10": {
+      "resnet50": 1.7187154293060303,
+      "vgg16_bn": 3.7740678787231445,
+      "resnet101": 2.847311019897461,
+      "mobilenet_v2": 0.7752857208251953,
+      "shufflenet_v2_x1_0": 0.2987194061279297
+    }
+  },
+  "epsilon": {
+    "0.03": {
+      "resnet50": {
+        "UAP-SGD": 0.298,
+        "Meta-0": 0.302,
+        "Meta-0-scaled": 0.3
+      },
+      "vgg16_bn": {
+        "UAP-SGD": 0.382,
+        "Meta-0": 0.334,
+        "Meta-0-scaled": 0.318
+      },
+      "resnet101": {
+        "UAP-SGD": 0.314,
+        "Meta-0": 0.306,
+        "Meta-0-scaled": 0.296
+      }
+    },
+    "0.05": {
+      "resnet50": {
+        "UAP-SGD": 0.378,
+        "Meta-0": 0.328,
+        "Meta-0-scaled": 0.328
+      },
+      "vgg16_bn": {
+        "UAP-SGD": 0.558,
+        "Meta-0": 0.372,
+        "Meta-0-scaled": 0.372
+      },
+      "resnet101": {
+        "UAP-SGD": 0.364,
+        "Meta-0": 0.316,
+        "Meta-0-scaled": 0.316
+      }
+    },
+    "0.1": {
+      "resnet50": {
+        "UAP-SGD": 0.478,
+        "Meta-0": 0.37,
+        "Meta-0-scaled": 0.492
+      },
+      "vgg16_bn": {
+        "UAP-SGD": 0.734,
+        "Meta-0": 0.436,
+        "Meta-0-scaled": 0.542
+      },
+      "resnet101": {
+        "UAP-SGD": 0.488,
+        "Meta-0": 0.336,
+        "Meta-0-scaled": 0.454
+      }
+    },
+    "0.2": {
+      "resnet50": {
+        "UAP-SGD": 0.508,
+        "Meta-0": 0.37,
+        "Meta-0-scaled": 0.828
+      },
+      "vgg16_bn": {
+        "UAP-SGD": 0.98,
+        "Meta-0": 0.432,
+        "Meta-0-scaled": 0.868
+      },
+      "resnet101": {
+        "UAP-SGD": 0.542,
+        "Meta-0": 0.336,
+        "Meta-0-scaled": 0.76
+      }
+    }
+  }
+}

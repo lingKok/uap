@@ -1,0 +1,125 @@
+{
+  "exp": "l2",
+  "surrogate": "resnet50",
+  "seed": 1342,
+  "config": {
+    "exp": "l2",
+    "dataset": "imagenet",
+    "surrogate": "resnet50",
+    "models": "auto",
+    "methods": "direct,tsc",
+    "eps_ws": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "eps_targets": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "bsweep_budgets": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "ks": [
+      200,
+      500,
+      1000
+    ],
+    "l2_budgets": [
+      5.0,
+      10.0,
+      20.0
+    ],
+    "eps_w": 0.05,
+    "eps_w_l2": 2.0,
+    "few_k": 200,
+    "many": 2000,
+    "steps": 200,
+    "lr": 0.01,
+    "batch_size": 128,
+    "tsc_alpha": 4,
+    "seeds": [
+      42,
+      1342,
+      2342
+    ],
+    "eval_n": 2000,
+    "eval_batch": 64,
+    "out_dir": "results_suppl"
+  },
+  "runs": {
+    "direct_l2@eps=5.0": {
+      "fr": {
+        "resnet50": 0.273,
+        "vgg16_bn": 0.296,
+        "resnet101": 0.2545,
+        "mobilenet_v2": 0.319,
+        "vit_b_16": 0.2015
+      },
+      "train_s": 34.8814263343811,
+      "l2_norm": 5.0
+    },
+    "direct_l2@eps=10.0": {
+      "fr": {
+        "resnet50": 0.328,
+        "vgg16_bn": 0.3535,
+        "resnet101": 0.29,
+        "mobilenet_v2": 0.3905,
+        "vit_b_16": 0.2065
+      },
+      "train_s": 35.03809928894043,
+      "l2_norm": 10.000000953674316
+    },
+    "direct_l2@eps=20.0": {
+      "fr": {
+        "resnet50": 0.4695,
+        "vgg16_bn": 0.4855,
+        "resnet101": 0.3855,
+        "mobilenet_v2": 0.5525,
+        "vit_b_16": 0.237
+      },
+      "train_s": 35.03892183303833,
+      "l2_norm": 20.0
+    },
+    "scaleup_l2@eps=5.0": {
+      "fr": {
+        "resnet50": 0.271,
+        "vgg16_bn": 0.2935,
+        "resnet101": 0.255,
+        "mobilenet_v2": 0.314,
+        "vit_b_16": 0.2015
+      },
+      "train_s": 35.022132396698,
+      "l2_norm": 5.0
+    },
+    "scaleup_l2@eps=10.0": {
+      "fr": {
+        "resnet50": 0.316,
+        "vgg16_bn": 0.357,
+        "resnet101": 0.2895,
+        "mobilenet_v2": 0.3885,
+        "vit_b_16": 0.213
+      },
+      "train_s": 35.022132396698,
+      "l2_norm": 10.0
+    },
+    "scaleup_l2@eps=20.0": {
+      "fr": {
+        "resnet50": 0.465,
+        "vgg16_bn": 0.4945,
+        "resnet101": 0.3985,
+        "mobilenet_v2": 0.5675,
+        "vit_b_16": 0.243
+      },
+      "train_s": 35.022132396698,
+      "l2_norm": 20.0
+    }
+  },
+  "meta": {}
+}

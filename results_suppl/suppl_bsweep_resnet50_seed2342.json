@@ -1,0 +1,185 @@
+{
+  "exp": "bsweep",
+  "surrogate": "resnet50",
+  "seed": 2342,
+  "config": {
+    "exp": "bsweep",
+    "dataset": "imagenet",
+    "surrogate": "resnet50",
+    "models": "auto",
+    "methods": "direct,tsc",
+    "eps_ws": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "eps_targets": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "bsweep_budgets": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "ks": [
+      200,
+      500,
+      1000
+    ],
+    "l2_budgets": [
+      5.0,
+      10.0,
+      20.0
+    ],
+    "eps_w": 0.05,
+    "eps_w_l2": 2.0,
+    "few_k": 200,
+    "many": 2000,
+    "steps": 200,
+    "lr": 0.01,
+    "batch_size": 128,
+    "tsc_alpha": 4,
+    "seeds": [
+      42,
+      1342,
+      2342
+    ],
+    "eval_n": 2000,
+    "eval_batch": 64,
+    "out_dir": "results_suppl"
+  },
+  "runs": {
+    "scaleup@eps=0.05": {
+      "fr": {
+        "resnet50": 0.895,
+        "vgg16_bn": 0.8125,
+        "resnet101": 0.6785,
+        "mobilenet_v2": 0.8005,
+        "vit_b_16": 0.2335
+      },
+      "train_s": 34.75213575363159
+    },
+    "scaleup@eps=0.1": {
+      "fr": {
+        "resnet50": 0.996,
+        "vgg16_bn": 0.98,
+        "resnet101": 0.96,
+        "mobilenet_v2": 0.9845,
+        "vit_b_16": 0.334
+      },
+      "train_s": 34.75213575363159
+    },
+    "scaleup@eps=0.15": {
+      "fr": {
+        "resnet50": 0.9975,
+        "vgg16_bn": 0.997,
+        "resnet101": 0.9915,
+        "mobilenet_v2": 0.995,
+        "vit_b_16": 0.457
+      },
+      "train_s": 34.75213575363159
+    },
+    "scaleup@eps=0.2": {
+      "fr": {
+        "resnet50": 0.999,
+        "vgg16_bn": 0.9985,
+        "resnet101": 0.997,
+        "mobilenet_v2": 0.9975,
+        "vit_b_16": 0.6535
+      },
+      "train_s": 34.75213575363159
+    },
+    "scaleup@eps=0.25": {
+      "fr": {
+        "resnet50": 0.9985,
+        "vgg16_bn": 0.9985,
+        "resnet101": 0.998,
+        "mobilenet_v2": 0.998,
+        "vit_b_16": 0.846
+      },
+      "train_s": 34.75213575363159
+    },
+    "scaleup@eps=0.3": {
+      "fr": {
+        "resnet50": 0.999,
+        "vgg16_bn": 0.998,
+        "resnet101": 0.998,
+        "mobilenet_v2": 0.9985,
+        "vit_b_16": 0.952
+      },
+      "train_s": 34.75213575363159
+    },
+    "pereps@eps=0.05": {
+      "fr": {
+        "resnet50": 0.3875,
+        "vgg16_bn": 0.407,
+        "resnet101": 0.335,
+        "mobilenet_v2": 0.4625,
+        "vit_b_16": 0.2305
+      },
+      "train_s": 34.77384352684021,
+      "sat": 0.8690741658210754
+    },
+    "pereps@eps=0.1": {
+      "fr": {
+        "resnet50": 0.5425,
+        "vgg16_bn": 0.552,
+        "resnet101": 0.462,
+        "mobilenet_v2": 0.665,
+        "vit_b_16": 0.2685
+      },
+      "train_s": 34.75037145614624,
+      "sat": 0.5246531963348389
+    },
+    "pereps@eps=0.15": {
+      "fr": {
+        "resnet50": 0.6335,
+        "vgg16_bn": 0.618,
+        "resnet101": 0.525,
+        "mobilenet_v2": 0.7295,
+        "vit_b_16": 0.287
+      },
+      "train_s": 34.75425124168396,
+      "sat": 0.2754703462123871
+    },
+    "pereps@eps=0.2": {
+      "fr": {
+        "resnet50": 0.6615,
+        "vgg16_bn": 0.6575,
+        "resnet101": 0.562,
+        "mobilenet_v2": 0.7425,
+        "vit_b_16": 0.3125
+      },
+      "train_s": 34.76628828048706,
+      "sat": 0.12824192643165588
+    },
+    "pereps@eps=0.25": {
+      "fr": {
+        "resnet50": 0.6705,
+        "vgg16_bn": 0.694,
+        "resnet101": 0.5845,
+        "mobilenet_v2": 0.7865,
+        "vit_b_16": 0.31
+      },
+      "train_s": 34.76290035247803,
+      "sat": 0.06307131797075272
+    },
+    "pereps@eps=0.3": {
+      "fr": {
+        "resnet50": 0.6255,
+        "vgg16_bn": 0.67,
+        "resnet101": 0.5525,
+        "mobilenet_v2": 0.738,
+        "vit_b_16": 0.304
+      },
+      "train_s": 34.76218795776367,
+      "sat": 0.027244100347161293
+    }
+  },
+  "meta": {}
+}

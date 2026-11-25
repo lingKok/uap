@@ -1,0 +1,58 @@
+{
+  "vgg16_bn": {
+    "0.1": {
+      "scaled_from_train_few": {
+        "mean": 0.9973333333333333,
+        "std": 0.0006236095644623044
+      },
+      "scaled_from_train_many": {
+        "mean": 0.9978333333333333,
+        "std": 0.00023570226039548988
+      },
+      "sgd_target_few": {
+        "mean": 0.9985,
+        "std": 0.0
+      },
+      "sgd_target_many": {
+        "mean": 0.9976666666666666,
+        "std": 0.00047140452079103207
+      }
+    },
+    "0.2": {
+      "scaled_from_train_few": {
+        "mean": 0.9996666666666667,
+        "std": 0.00023570226039548988
+      },
+      "scaled_from_train_many": {
+        "mean": 0.999,
+        "std": 0.0
+      },
+      "sgd_target_few": {
+        "mean": 0.999,
+        "std": 0.0
+      },
+      "sgd_target_many": {
+        "mean": 0.9988333333333334,
+        "std": 0.00023570226039548988
+      }
+    },
+    "0.3": {
+      "scaled_from_train_few": {
+        "mean": 0.9996666666666667,
+        "std": 0.00023570226039548988
+      },
+      "scaled_from_train_many": {
+        "mean": 0.999,
+        "std": 0.0
+      },
+      "sgd_target_few": {
+        "mean": 0.999,
+        "std": 0.0
+      },
+      "sgd_target_many": {
+        "mean": 0.999,
+        "std": 0.0
+      }
+    }
+  }
+}

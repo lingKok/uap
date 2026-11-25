@@ -1,0 +1,66 @@
+  [vgg16_bn] seed42 direct ε=0.10 白盒FR=0.999 (90.9s)
+  [vgg16_bn] seed42 direct ε=0.20 白盒FR=0.999 (90.8s)
+  [vgg16_bn] seed42 direct ε=0.30 白盒FR=1.000 (90.5s)
+  [vgg16_bn] seed42 direct_lr0.002 ε=0.10 白盒FR=0.493 (90.9s)
+  [vgg16_bn] seed42 direct_lr0.002 ε=0.20 白盒FR=0.500 (90.8s)
+  [vgg16_bn] seed42 direct_lr0.002 ε=0.30 白盒FR=0.494 (90.7s)
+  [vgg16_bn] seed42 direct_lr0.05 ε=0.10 白盒FR=0.997 (90.5s)
+  [vgg16_bn] seed42 direct_lr0.05 ε=0.20 白盒FR=0.999 (90.5s)
+  [vgg16_bn] seed42 direct_lr0.05 ε=0.30 白盒FR=0.999 (90.9s)
+  [vgg16_bn] seed42 pdua ε=0.10 白盒FR=0.364 (90.6s)
+  [vgg16_bn] seed42 pdua ε=0.20 白盒FR=0.361 (91.1s)
+  [vgg16_bn] seed42 pdua ε=0.30 白盒FR=0.378 (90.5s)
+  [vgg16_bn] seed42 lws ε=0.10 白盒FR=0.995 (90.5s)
+  [vgg16_bn] seed42 lws ε=0.20 白盒FR=1.000 (90.6s)
+  [vgg16_bn] seed42 lws ε=0.30 白盒FR=0.999 (90.8s)
+  [vgg16_bn] seed42 lws_r ε=0.10 白盒FR=0.999 (109.4s)
+  [vgg16_bn] seed42 lws_r ε=0.20 白盒FR=0.999 (109.3s)
+  [vgg16_bn] seed42 lws_r ε=0.30 白盒FR=1.000 (109.4s)
+  [vgg16_bn] seed42 ceiling ε=0.10 白盒FR=0.998
+  [vgg16_bn] seed42 ceiling ε=0.20 白盒FR=0.999
+  [vgg16_bn] seed42 ceiling ε=0.30 白盒FR=0.999
+[保存] results_fewshot/results_fewshot_imagenet_vgg16_bn_seed42.json
+  [vgg16_bn] seed1342 direct ε=0.10 白盒FR=0.999 (90.1s)
+  [vgg16_bn] seed1342 direct ε=0.20 白盒FR=0.999 (90.5s)
+  [vgg16_bn] seed1342 direct ε=0.30 白盒FR=0.999 (90.5s)
+  [vgg16_bn] seed1342 direct_lr0.002 ε=0.10 白盒FR=0.529 (90.7s)
+  [vgg16_bn] seed1342 direct_lr0.002 ε=0.20 白盒FR=0.499 (90.5s)
+  [vgg16_bn] seed1342 direct_lr0.002 ε=0.30 白盒FR=0.488 (90.5s)
+  [vgg16_bn] seed1342 direct_lr0.05 ε=0.10 白盒FR=0.997 (90.7s)
+  [vgg16_bn] seed1342 direct_lr0.05 ε=0.20 白盒FR=0.999 (90.4s)
+  [vgg16_bn] seed1342 direct_lr0.05 ε=0.30 白盒FR=0.999 (90.4s)
+  [vgg16_bn] seed1342 pdua ε=0.10 白盒FR=0.363 (90.5s)
+  [vgg16_bn] seed1342 pdua ε=0.20 白盒FR=0.368 (90.5s)
+  [vgg16_bn] seed1342 pdua ε=0.30 白盒FR=0.380 (90.4s)
+  [vgg16_bn] seed1342 lws ε=0.10 白盒FR=0.998 (90.4s)
+  [vgg16_bn] seed1342 lws ε=0.20 白盒FR=1.000 (90.5s)
+  [vgg16_bn] seed1342 lws ε=0.30 白盒FR=0.998 (90.4s)
+  [vgg16_bn] seed1342 lws_r ε=0.10 白盒FR=0.999 (109.6s)
+  [vgg16_bn] seed1342 lws_r ε=0.20 白盒FR=0.999 (109.5s)
+  [vgg16_bn] seed1342 lws_r ε=0.30 白盒FR=1.000 (109.5s)
+  [vgg16_bn] seed1342 ceiling ε=0.10 白盒FR=0.999
+  [vgg16_bn] seed1342 ceiling ε=0.20 白盒FR=0.999
+  [vgg16_bn] seed1342 ceiling ε=0.30 白盒FR=0.999
+[保存] results_fewshot/results_fewshot_imagenet_vgg16_bn_seed1342.json
+  [vgg16_bn] seed2342 direct ε=0.10 白盒FR=0.999 (90.0s)
+  [vgg16_bn] seed2342 direct ε=0.20 白盒FR=0.999 (90.4s)
+  [vgg16_bn] seed2342 direct ε=0.30 白盒FR=0.999 (90.5s)
+  [vgg16_bn] seed2342 direct_lr0.002 ε=0.10 白盒FR=0.495 (90.5s)
+  [vgg16_bn] seed2342 direct_lr0.002 ε=0.20 白盒FR=0.497 (90.5s)
+  [vgg16_bn] seed2342 direct_lr0.002 ε=0.30 白盒FR=0.478 (90.5s)
+  [vgg16_bn] seed2342 direct_lr0.05 ε=0.10 白盒FR=0.995 (90.5s)
+  [vgg16_bn] seed2342 direct_lr0.05 ε=0.20 白盒FR=0.999 (90.5s)
+  [vgg16_bn] seed2342 direct_lr0.05 ε=0.30 白盒FR=0.999 (90.5s)
+  [vgg16_bn] seed2342 pdua ε=0.10 白盒FR=0.363 (90.5s)
+  [vgg16_bn] seed2342 pdua ε=0.20 白盒FR=0.377 (90.5s)
+  [vgg16_bn] seed2342 pdua ε=0.30 白盒FR=0.365 (90.6s)
+  [vgg16_bn] seed2342 lws ε=0.10 白盒FR=0.891 (90.5s)
+  [vgg16_bn] seed2342 lws ε=0.20 白盒FR=0.999 (90.5s)
+  [vgg16_bn] seed2342 lws ε=0.30 白盒FR=0.999 (90.5s)
+  [vgg16_bn] seed2342 lws_r ε=0.10 白盒FR=0.998 (109.5s)
+  [vgg16_bn] seed2342 lws_r ε=0.20 白盒FR=1.000 (109.4s)
+  [vgg16_bn] seed2342 lws_r ε=0.30 白盒FR=1.000 (110.4s)
+  [vgg16_bn] seed2342 ceiling ε=0.10 白盒FR=0.997
+  [vgg16_bn] seed2342 ceiling ε=0.20 白盒FR=0.999
+  [vgg16_bn] seed2342 ceiling ε=0.30 白盒FR=0.999
+[保存] results_fewshot/results_fewshot_imagenet_vgg16_bn_seed2342.json
